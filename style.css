@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "dancing Script", monospace;
+    background-color: aqua;
+}
+
+.my_divs{
+    height: 100vh;
+    overflow: hidden;
+}
+
+#btn, #btn1, #btn2, #btn3 {
+    visibility: hidden;
+    position: absolute;
+}
+
+.arrow_down::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top: 30rem;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-right: 4px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#div1{
+    background-color: steelblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#div1 h1{
+    margin: 1rem;
+    color: white;
+    text-shadow: 1px 1px 1px black ;
+}
+
+#div1 i{
+    font-size: 1.6rem;
+    color: white;
+    text-shadow: 1px 1px 1px black ;    
+}
+
+#div1 p{
+    color: white;
+    text-shadow: 1px 1px 1px black ;
+    line-height: 2rem;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+}
+
+.img_div div{
+    width: 210px;
+    height: 210px;
+    background-color: aqua;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+
+.img_div div img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+
+    background-image: url(img/computer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div2 div{
+    background-color: rgba(13, 13, 13, 0.3);
+    width: 100vw;
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#div2 div img{
+    width: 200px;
+    height: 200px;
+    margin-top: 10%;
+}
+
+#div2 div h1{
+    margin: 1rem;
+    color: white;
+    text-shadow: 1px 1px 1px black ;
+}
+
+#div2 div p{
+    color: white;
+    font-size: 1.4rem;
+}
+
+#div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding: 0px 10% 0px;
+}
+
+.skills_wrap{
+    display: inline;
+}
+
+#skill_title{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding: 30px;
+    width: 100%;
+}
+
+.skills h3, .skills p{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.skills{
+    width: 180px;
+    height: 250px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    background-color: rgb(17, 107, 100);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.skills img{
+    width: 50%;
+}
+
+#div4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    background-image: url(img/computer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div4 div{
+    background-color: rgba(137, 43, 226, 0.219);
+    width: 100vw;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+#div4 h1, #div4 p{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding: 30px;
+}
+
+form input{
+    width: 100%;
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: large;
+}
+
+form input:focus{
+    outline: none;
+}
+
+textarea{
+    font-family: inherit;
+    margin: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    padding: 8px;
+}
+
+form button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button:focus{
+    outline: none;
+    transform: scale(0.95);
+
+}
+
+form button:hover{
+    background-color: rgb(101, 101, 226);
+    transition: background-color 1s ease-in;
+}
